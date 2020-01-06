@@ -10,6 +10,6 @@ const port = 8888;
 
 app.listen(port, () => {
     console.log(`Server is up and running on ${port}.`);
-    res.send(`You have hit the API/Server.`);
+    res.send(`Hello World.`);
 });
 
