@@ -40,6 +40,13 @@ async function getPikaData() {
       })
 }
 
+var i = 0;
+
+setInterval( () => {
+  console.log(`iteration ${i}`);
+  i++;
+}, 1000);
+
 async function main() {
     const snorlax = await getSnorlaxData();
     fs.writeFile('snorlax.json', JSON.stringify(snorlax), (err) => {
